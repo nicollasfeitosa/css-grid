@@ -1,0 +1,59 @@
+/* CSS do Index */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    background: #7159c1;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    padding: 5em 0;
+}
+
+.title h1 {
+    font-size: 5em;
+}
+
+.container a {
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.container-video {
+    margin-top: 3em;
+}
+
+.container-video h2 {
+    margin-bottom: 1em;
+}
+
+iframe {
+    border: 2px solid #442d91;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 2em 0;
+    border-top: 2px solid #442d91;
+    background-color: #6c51c4;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}

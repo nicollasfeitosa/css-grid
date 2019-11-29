@@ -1,0 +1,71 @@
+/* CSS GRID */
+
+/* Começando por um RESET */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Definindo cores para visualização do GRID */
+
+header {
+    background: yellow;
+
+    grid-area: h;
+
+    /* grid-column: 1/3;
+    grid-row: 3/4; */
+
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 4; */
+}
+
+main {
+    background: aqua;
+
+    grid-area: m;
+
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+}
+
+aside {
+    background: greenyellow;
+
+    grid-area: a;
+
+/* 
+    grid-column-start: 2;
+    grid-column-end: 3; */
+}
+
+footer {
+    background: tomato;
+
+    grid-area: f;
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+/* Primeiros passos iniciar o GRID no container */
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /*Define uma fração por da coluna por atributo*/
+    grid-template-rows: 20vh 70vh 10vh; /*Define a altura das linhas*/
+    /* grid-gap: 20px; */
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+}
